@@ -6,7 +6,7 @@ let wordForGuessing = {
           "output",
           "input"],
     description:["the simulation of human intelligence processes by machines, especially computer systems",
-                 "A method which tries to predict what the end-users searching for based onthe input.",
+                 "A method which tries to predict what the end-users is searching for based on the input.",
                  "A method which masks some of the input and forces the model to predict the missing words based on the context provided by the surrounding words. ",
                  "Modification of the input and ranking each words.",
                  "The information provided by the model.",
