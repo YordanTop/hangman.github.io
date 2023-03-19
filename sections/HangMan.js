@@ -1,8 +1,16 @@
 let wordForGuessing = {
-    word:["artificial intelligence","pp"],
+    word:["artificial intelligence",
+          "language model pretraining",
+          "masked language modeling",
+          "transformer model",
+          "output",
+          "input"],
     description:["the simulation of human intelligence processes by machines, especially computer systems",
-                 "MM",
-                 ""]
+                 "A method which tries to predict what the end-users searching for based onthe input.",
+                 "A method which masks some of the input and forces the model to predict the missing words based on the context provided by the surrounding words. ",
+                 "Modification of the input and ranking each words.",
+                 "The information provided by the model.",
+                 "The information provided by the user."]
 }
 
 let BodyPart = function(part){
@@ -20,7 +28,7 @@ let bodyParts = [BodyPart("Head")
                 ,BodyPart("Right-Leg")];
 
 let tries = 0;
-let rand = Math.floor(Math.random()* 2);
+let rand = Math.floor(Math.random()* 6);
 let printWord = document.getElementById("guess-word");
 let counter = 0;
 let keeper = [];
@@ -86,7 +94,7 @@ let CheckWord = function(word){
 let CheckLetter = function(letter){
 let previous_board = printWord.textContent;
     for(let i = 0; i<wordForGuessing.word[rand].length; i++){
-        if(letter === wordForGuessing.word[rand][i]){
+        if(letter === wordForGuessing.word[rand][i] && keeper[i] == " _ "){
             keeper[i] = letter;
             printWord.textContent = "";
             PrintSpace(wordForGuessing.word[rand]);
