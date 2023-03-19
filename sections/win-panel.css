@@ -1,0 +1,21 @@
+.win-panel{
+    display: none;
+    position: absolute;
+    width: 75vw;
+    height: 60vh;
+    border-radius: 5%;
+    background-color: #3cacce57;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(36, 219, 26);
+}
+
+.win-condition{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 6em;
+}
+
+.win-panel p{
+    font-size: 2.5em;
+}
+
