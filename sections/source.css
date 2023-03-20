@@ -32,6 +32,11 @@ img{
     width: 30vw;
 }
 
+a, a:active, a:visited{
+    color: white;
+    text-decoration: none;
+}
+
 .qr{
     max-width: 100px;
     max-height: 100px;
@@ -41,3 +46,4 @@ img{
     display: grid;
     grid-template:"a b" auto;
 }
+
